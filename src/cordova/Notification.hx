@@ -26,7 +26,7 @@ extern class Notification
      * @param title: Dialog title (String) (Optional, Default: "Confirm")
      * @param buttonLabels: Comma separated string with button labels (String) (Optional, Default: "OK,Cancel")
      **/
-    public static function confirm(message: String, confirmCallback: Int->Void, ?title: String, ?buttonName: String): Void;
+    public static function confirm(message: String, confirmCallback: Int->Void, ?title: String, ?buttonLabels: String): Void;
 
     /**
      * The device will play a beep sound.

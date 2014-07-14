@@ -7,6 +7,8 @@
 
 package cordova;
 
+import js.Dom.History;
+
 @:native("InAppBrowser")
 extern class InAppBrowser
 {
@@ -15,4 +17,6 @@ extern class InAppBrowser
     public function removeEventListener(pEventName: String, pCallback:Dynamic->Void):Void;
 
     public function close():Void;
+    
+    public var history : History;
 }

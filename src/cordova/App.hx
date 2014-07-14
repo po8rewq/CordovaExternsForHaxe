@@ -13,20 +13,23 @@ package cordova;
 extern class App
 {
     public static function loadUrl(url: String):Void;
+    public static function exitApp():Void;
+
+    public static var backHistory: Dynamic; // seulement pour android (si j'ai bien compris ...) sinon rester sur window.history.back()
 }
 
 
-class Extra
-{
-    public static var document(get_document, null):InAppBrowser;
-    private static function get_document():InAppBrowser
-    {
-        return untyped __js__("document");
-    }
-
-    public static var window(get_window, null):InAppBrowser;
-    private static function get_window():InAppBrowser
-    {
-        return untyped __js__("window");
-    }
-}
+//class Extra
+//{
+//    public static var document(get_document, null):InAppBrowser;
+//    private static function get_document():InAppBrowser
+//    {
+//        return untyped __js__("document");
+//    }
+//
+//    public static var window(get_window, null):InAppBrowser;
+//    private static function get_window():InAppBrowser
+//    {
+//        return untyped __js__("window");
+//    }
+//}
